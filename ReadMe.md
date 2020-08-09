@@ -1,5 +1,10 @@
 - git clone the repo
-- npm start
+
+'''
+$cd basic-frontend-app
+$npm install
+$cd ..
+$npm start
+'''
+
 - run the DemoApplication (in Intellij/other IDE)
-
-

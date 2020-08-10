@@ -12,7 +12,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "PORT=8181 react-scripts start",
+    "start": "react-scripts start port=8181",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

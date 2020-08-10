@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angularandspring
+  labels:
+    app: angularandspring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: angularandspring
+  template:
+    metadata:
+      labels:
+        app: angularandspring
+    spec:
+      containers:
+      - name: angularandspring
+        image: linna1998/demo:0.0.1-SNAPSHOT
+        imagePullPolicy: Always
+        env:
+        - name: MONGODB_HOST
+          value: mongodb
+        - name: JWTTOKEN_SECRET
+        # change this secret to a random alphanumeric string of the same length or longer
+          value: secret-key1234567890abcdefghijklmnopqrstuvwxyz
+        ports:
+        - containerPort: 8080
+ 

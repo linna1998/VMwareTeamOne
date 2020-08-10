@@ -1,0 +1,10 @@
+webAppName: demo
+dbName: mongodb
+webImageName: keding/demo
+webImageVersion: latest
+dbImageName: mongo
+dbImageVersion: 3.6.6
+volumeClaimName: mongo-pv-claim
+persistentVolumeName: task-pv-volume
+# change this secret to a random alphanumeric string of the same length or longer
+jwtTokenSecrect: secret-key1234567890abcdefghijklmnopqrstuvwxyz
